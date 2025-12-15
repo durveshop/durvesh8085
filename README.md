@@ -1,15 +1,15 @@
 # durvesh808
-Count of odd as well as even 
-C000 XRA A ;Clear accumulator
-C001 MVI C ;Set Counter as Reg.C with 05H.
-C002 05
-C003 MVI D ;Set Odd Counter as Reg.D as 00H
-C004 00
-C005 MVI E ;Set Even Counter as Reg.E as 00H
-C006 00
-C007 LXI H ;Initialize memory pointer at C040H
-C008 40
-C009 C0
+Count of odd as well as even    
+C000 XRA A ;Clear accumulator.  
+C001 MVI C ;Set Counter as Reg.C with 05H.   
+C002 05.        
+C003 MVI D ;Set Odd Counter as Reg.D as 00H.     
+C004 00.     
+C005 MVI E ;Set Even Counter as Reg.E as 00H.    
+C006 00.     
+C007 LXI H ;Initialize memory pointer at C040H.      
+C008 40.      
+C009 C0.    
 C00A MOV AM ;Copy Data Byte in Reg.A
 C00B RRC  ;Rotate contents of Reg.A towards Right
 C00C JC ODD ;If CY = 1 , GO TO Label ODD
